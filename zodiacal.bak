@@ -1,0 +1,47 @@
+//4)Este programa muestra el signo zodiacal de una persona.
+//Para ello el usuario debe introducir únicamente el día
+//y el mes de nacimiento y el programa determinará
+//inmediatamente el signo zodiacal de la persona.
+
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h> 
+
+void main()
+{
+int dia,mes;
+printf("introducir su mes de nacimiento:");
+scanf("%d",mes);
+printf("introducir su dia de nacimento:");
+scanf("%d",dia);
+system("cls");
+switch(mes)
+{ 
+case1: if (dia<=22) printf("capricornio");
+else if (dia>=22) printf("acuario");break;
+case2: if (dia<=20) printf("acuario");
+else if  (dia>=20) printf("piscis");break;
+case3: if (dia<=19) printf("piscis");
+else if(dia>=19) printf("aries");break;
+case4:if (dia<=19)  printf("aries");
+else if (dia>=19) printf("tauros");break;
+case5: if (dia<=20) printf("tauro");
+else if (dia>=20) printf("geminis");break;
+case6: if (dia<=20) printf("geminis");
+else  if (dia>=20) printf("cancer");break;
+case7: if (dia<=21) printf("cancer");
+else if (dia>=21) printf("leo");break;
+case8: if (dia<=23) printf("leo");
+else if(dia>=23) printf("virgo");break;
+case9: if (dia<=22) printf("virgo");
+else if (dia>=22)  printf("libra");break;
+case10: if (dia<=23)  printf("libra");
+else if(dia>=23) printf("escorpon");break;
+case11: if (dia<=23) printf("escorpion");
+else if (dia>=23) printf("sagitario");break;
+case12: if (dia<=22) printf("sagitario");
+else if(dia>=23){printf ("capricornio");break;
+default: printf("mes incorrecto");
+}
+return;
+}
